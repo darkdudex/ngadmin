@@ -1,0 +1,496 @@
+<div class="page page-single-product">
+
+
+
+
+  <!-- page header -->
+  <div class="pageheader">
+
+    <h2>Bourbon Arabica Coffee</h2>
+
+    <div class="page-bar">
+
+
+
+    </div>
+
+  </div>
+  <!-- /page header -->
+
+
+
+
+
+
+  <!-- page content -->
+  <div class="pagecontent">
+
+
+
+    <div class="add-nav">
+      <div class="nav-heading">
+        <h3>Product ID : <strong class="text-greensea">#123456</strong></h3>
+        <span class="controls pull-right">
+          <a ui-sref="app.shop.products" class="btn btn-ef btn-ef-1 btn-ef-1-default btn-ef-1a btn-rounded-20 mr-5" uib-tooltip="Back"><i class="fa fa-times"></i></a>
+          <a href="javascript:;" class="btn btn-ef btn-ef-1 btn-ef-1-success btn-ef-1a btn-rounded-20 mr-5" uib-tooltip="Save"><i class="fa fa-check"></i></a>
+          <a href="javascript:;" class="btn btn-ef btn-ef-1 btn-ef-1-danger btn-ef-1a btn-rounded-20 mr-5" uib-tooltip="Delete"><i class="fa fa-trash"></i></a>
+
+        </span>
+      </div>
+      <uib-tabset>
+
+
+
+
+
+
+
+
+        <uib-tab heading="Details">
+
+
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+              <!-- tile -->
+              <section class="tile time-simple">
+
+                <!-- tile body -->
+                <div class="tile-body">
+
+
+                  <!-- row -->
+                  <div class="row">
+
+                    <!-- col -->
+                    
+                    <!-- /col -->
+
+                    <!-- col -->
+                    <div class="col-md-12">
+
+                      <h2 class="custom-font mb-5">Bourbon Arabica Coffee</h2>
+
+                      <p class="desc text-default lt mb-20">Our coffee is produced in a climate with perfect conditions for growing coffee trees. Our high altitude, volcanic soil, hot sun and equatorial mist are an unbeatable alchemy to produce premium quality Arabica green beans that produce a complex cup with a range of cup profiles and notes of; “Dark chocolate, spice and a hint of Luscious fruit.” Our coffee is also known for its sweetness, citrus taste of exotic tropical fruits with a clean and long finish mouth feel.
+</p>
+
+
+                      <h2 class="price mt-40 mb-0 text-success">{{ 5.50 | currency}} / <small>kg</small></h2>
+
+                    </div>
+                    <!-- /col -->
+
+                  </div>
+                  <!-- /row -->
+
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+              <!-- /tile -->
+
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- /row -->
+
+
+        </uib-tab>
+
+
+
+
+
+
+
+        <uib-tab heading="Overview">
+
+
+
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+              <!-- tile -->
+              <section class="tile">
+
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                  <h1 class="custom-font"><strong>Edit </strong> Product Overview</h1>
+                </div>
+                <!-- /tile header -->
+
+
+                <!-- tile body -->
+                <div class="tile-body">
+
+
+                  <form class="form-horizontal" role="form">
+
+                    <div class="form-group">
+                      <label for="id" class="col-sm-2 control-label">ID: </label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="id" placeholder="Item ID" value="123456" disabled>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="name" class="col-sm-2 control-label">Name: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Item Name" value="Bourbon Arabica Coffee">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="description" class="col-sm-2 control-label">Description: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" id="description" placeholder="Item Description" rows="5">Our coffee is produced in a climate with perfect conditions for growing coffee trees. Our high altitude, volcanic soil, hot sun and equatorial mist are an unbeatable alchemy to produce premium quality Arabica green beans that produce a complex cup with a range of cup profiles and notes of; “Dark chocolate, spice and a hint of Luscious fruit.” Our coffee is also known for its sweetness, citrus taste of exotic tropical fruits with a clean and long finish mouth feel. </p>
+                        </textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="category" class="col-sm-2 control-label">Category: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <select ui-jq="chosen" id="category" multiple="" ui-options="{width: '100%'}" style="display: none;" class="form-control">
+                          <optgroup label="Food">
+                            <option>Vegetables</option>
+                            <option>Fruits</option>
+                            <option>Beans</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="category" class="col-sm-2 control-label">Certification: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <select ui-jq="chosen" id="category" multiple="" ui-options="{width: '100%'}" style="display: none;" class="form-control">
+                          <optgroup label="Food">
+                            <option>Q-Graders by the Coffee Quality Institute (CQI)</option>
+                            <option>Fair Trade</option>
+                            <option>None GMO</option>
+                            <option>Organic</option>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="price" class="col-sm-2 control-label">Price: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <input ui-jq="TouchSpin" type="text"  id="price" value="5.50" class="form-control" data-min='0' data-max="100000" data-step="0.1" data-decimals="2" data-stepinterval="50" data-maxboostedstep="100000" data-prefix="$">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="discount" class="col-sm-2 control-label">Max Discount: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <input ui-jq="TouchSpin" type="text"  id="discount" value="0" class="form-control" data-min='0' data-max="100" data-stepinterval="50" data-maxboostedstep="100000" data-postfix="%">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="unit" class="col-sm-2 control-label">Unit: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <select id="unit" ui-jq="chosen" ui-options="{width: '100%'}" style="display: none;" class="form-control">
+                          <option>Kg</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="status" class="col-sm-2 control-label">Status: <span class="text-lightred text-md">*</span></label>
+                      <div class="col-sm-10">
+                        <select id="status" ui-jq="chosen" ui-options="{width: '100%'}" style="display: none;" class="form-control">
+                          <option>Available</option>
+                          <option>Unavailable</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </form>
+
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+              <!-- /tile -->
+
+
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- /row -->
+
+
+
+
+        </uib-tab>
+
+
+
+
+
+
+
+
+
+        <uib-tab heading="Packaging">
+
+
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+              <!-- tile -->
+              <section class="tile">
+
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                  <h1 class="custom-font"><strong>Edit </strong> Packaging</h1>
+                </div>
+                <!-- /tile header -->
+
+
+                <!-- tile body -->
+                <div class="tile-body">
+
+
+                  <form class="form-horizontal" role="form">
+
+                    <div class="form-group">
+                      <label for="title" class="col-sm-2 control-label">Package Type:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title" placeholder="Meta Title" value="Bulk">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="title" class="col-sm-2 control-label">Package Weight:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title" placeholder="Meta Title" value="250 Kg">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="title" class="col-sm-2 control-label">Total Packages:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title" placeholder="Meta Title" value="8">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="title" class="col-sm-2 control-label">Total Weight in Kg:</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title" placeholder="Meta Title" value="2,000">
+                      </div>
+                    </div>
+
+                  </form>
+
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+
+
+              <!-- /tile -->
+
+
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- /row -->
+
+
+        </uib-tab>
+
+        <uib-tab heading="Documents">
+
+
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+              <!-- tile -->
+              <section class="tile">
+
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                  <h1 class="custom-font"><strong>Upload </strong> Documents</h1>
+                </div>
+                <!-- /tile header -->
+
+
+                <!-- tile body -->
+                <div class="tile-body">
+
+
+                  <form class="form-horizontal" role="form" style="text-align: center;">
+
+                              <!-- Example: nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
+                    <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
+                      <div nv-file-over="" uploader="uploader" over-class="another-file-over-class" class="well text-center p-30 b-dashed b-2x">
+                        <strong>Drop Q-Graders by the Coffee Quality Institute (CQI) Certification Here</strong>
+                        <br>
+                        <br>
+                        <i class="fa fa-plus fa-2x"></i>
+                      </div>
+                    </div>
+
+                    <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
+                      <div nv-file-over="" uploader="uploader" over-class="another-file-over-class" class="well text-center p-30 b-dashed b-2x">
+                        <strong>Drop Fair Trade Certification Here</strong>
+                        <br>
+                        <br>
+                        <i class="fa fa-plus fa-2x"></i>
+                      </div>
+                    </div>
+
+                    <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
+                      <div nv-file-over="" uploader="uploader" over-class="another-file-over-class" class="well text-center p-30 b-dashed b-2x">
+                        <strong>Drop None GMO Certification Here</strong>
+                        <br>
+                        <br>
+                        <i class="fa fa-plus fa-2x"></i>
+                      </div>
+                    </div>
+
+                    <div nv-file-drop="" uploader="uploader" options="{ url: '/foo' }">
+                      <div nv-file-over="" uploader="uploader" over-class="another-file-over-class" class="well text-center p-30 b-dashed b-2x">
+                        <strong>Drop Organic Certification Here</strong>
+                        <br>
+                        <br>
+                        <i class="fa fa-plus fa-2x"></i>
+                      </div>
+                    </div>
+
+                  </form>
+
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+
+              
+              <!-- /tile -->
+
+
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- /row -->
+
+
+        </uib-tab>
+
+        <uib-tab heading="History">
+
+
+
+
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+
+
+
+              <!-- tile -->
+              <section class="tile tile">
+
+                <!-- tile header -->
+                <div class="tile-header dvd dvd-btm">
+                  <h1 class="custom-font"><strong>Product </strong> History</h1>
+                </div>
+                <!-- /tile header -->
+
+                <!-- tile body -->
+                <div class="tile-body p-0">
+
+                  <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Desription</th>
+                        <th>Date</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td><a href="javascript:;">1</a></td>
+                        <td>Product Created</td>
+                        <td>Jan 20, 2015</td>
+                      </tr>
+                      <tr>
+                        <td><a href="javascript:;">2</a></td>
+                        <td>Product is available</td>
+                        <td>Jan 20, 2015</td>
+                      </tr>
+                      <tr>
+                        <td><a href="javascript:;">3</a></td>
+                        <td>Product updated</td>
+                        <td>Jan 21, 2015</td>
+                      </tr>
+                      <tr>
+                        <td><a href="javascript:;">4</a></td>
+                        <td>Product is unavailable</td>
+                        <td>Jan 21, 2015</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                <!-- /tile body -->
+
+              </section>
+              <!-- /tile -->
+
+
+            </div>
+            <!-- /col -->
+          </div>
+          <!-- /row -->
+
+
+
+
+        </uib-tab>
+
+
+
+
+
+
+
+
+
+      </uib-tabset>
+    </div>
+
+
+
+  </div>
+  <!-- /page content -->
+
+
+
+
+</div>

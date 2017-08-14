@@ -1,0 +1,26 @@
+[
+    {
+        "id": 901,
+        "name": "Bourbon Arabica Coffee",
+        "category": "Beans",
+        "price": 866,
+        "date": "2017-08-01T15:13:25.562Z",
+        "status": "Available"
+    },
+    {
+        "id": 902,
+        "name": "Bourbon Arabica Coffee",
+        "category": "Beans",
+        "price": 261,
+        "date": "2013-01-11T05:12:40.796Z",
+        "status": "Pending Approval"
+    },
+    {
+        "id": 903,
+        "name": "Bourbon Arabica Coffee",
+        "category": "Benas",
+        "price": 242,
+        "date": "2014-01-30T23:50:37.018Z",
+        "status": "Not Available"
+    }
+]
